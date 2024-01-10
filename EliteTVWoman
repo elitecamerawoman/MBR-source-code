@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BOT_TOKEN="MTE5NDcxMTI1NTY3NjYyNDk1Ng.GWUOLH.3B7jJMfnAY1kpeXy68auEABfvnkGlQeZZX2R1Y"
+
+CHANNEL_ID="1192882735778369553"
+
+MESSAGE="I'm Elite TV Woman :3"
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bot $BOT_TOKEN" \
+-d "{\"content\":\"$MESSAGE\"}" \
+"https://discord.com/api/v10/channels/$CHANNEL_ID/messages"
